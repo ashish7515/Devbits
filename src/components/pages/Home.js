@@ -3,6 +3,7 @@ import '../../App.css';
 import HeroSection from '../HeroSection';
 import Stocklist from '../Stocklist';
 import AboutUs from '../AboutUs';
+import Stockgraph from '../Stockgraph';
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <HeroSection />
       <Stocklist />
       <AboutUs />
+      <Stockgraph />
     </>
   );
 }

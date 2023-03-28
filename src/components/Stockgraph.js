@@ -1,8 +1,9 @@
+import { margin } from '@mui/system';
 import React, { useEffect, useRef } from 'react';
 
 let tvScriptLoadingPromise;
 
-export default function Stockgraph(props) {
+export default function Stockgraph() {
   const onLoadScriptRef = useRef();
 
   useEffect(
@@ -28,10 +29,10 @@ export default function Stockgraph(props) {
       function createWidget() {
         if (document.getElementById('tradingview_5b391') && 'TradingView' in window) {
           new window.TradingView.widget({
-            width: true,
-            height: 510,
+            width: 290,
             // autosize: true,
-            symbol: `${props.name}`,
+            // height: 5,
+            symbol: "SOVO",
             interval: "D",
             timezone: "Etc/UTC",
             theme: "dark",
@@ -40,7 +41,7 @@ export default function Stockgraph(props) {
             toolbar_bg: "#f1f3f6",
             enable_publishing: false,
             allow_symbol_change: true,
-            container_id: "tradingview_5b391"
+            container_id: "tradingview_5b391",
           });
         }
       }

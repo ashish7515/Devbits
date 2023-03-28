@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import '../../App.css';
 import axios from 'axios';
 import Stockitem from '../Stockitem';
-import Stockgraph from '../pages/Stockgraph'
+import Stockgraph from '../Stockgraph'
 import '../Stocks.css';
+import Portfolio from './Portfolio';
 
 const options = {
   method: 'GET',
@@ -19,6 +20,7 @@ const options = {
 
 export default function Services() {
   const [Price, setPrice] = React.useState([]);
+  const [Name,setName] = React.useState();
 
   useEffect(() => {
     axios.request(options).then(function (response) {
@@ -41,12 +43,11 @@ export default function Services() {
             {Price.map((item) => (
               <div>
                 <Stockitem
-                path="/Services"
+                path="/Graphs"
                 name={item.symbol}
                 avg_value={item.aveg_pricePerShare}
                 tot_value={item.tot_value}
                 />
-                <Stockgraph name={item.symbol}/>
               </div>
             ))}
           </ul>

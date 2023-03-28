@@ -8,7 +8,7 @@ import Portfolio from './components/pages/Portfolio';
 import SignUp from './components/pages/SignUp';
 import Marketnews from './components/pages/Marketnews';
 import Footer from './components/Footer';
-import Stockgraph from './components/pages/Stockgraph';
+import Graphs from './components/pages/Graphs';
 import './index.css';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <Route path='/Portfolio' component={Portfolio} />
           <Route path='/sign-up' component={SignUp} />
           <Route path='/Marketnews' component={Marketnews} />
-          <Route path='/Services/Stockgraph' component={Stockgraph} />
+          <Route path='/Graphs' component={Graphs} />
           {/* </Routes> */}
         </Switch>
         <Footer />

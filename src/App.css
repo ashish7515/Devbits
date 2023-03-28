@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -13,12 +10,20 @@
 .services,
 .products,
 .sign-up,
-.marketnews {
+.marketnews
+ {
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+}
+.Graphs{
+  display: flex;
+  height: 25vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
 }
 
 .services {
@@ -59,3 +64,8 @@
   height: 60vh;
 }
 
+.graph-container{
+  height: 20vh;
+  position: fixed;
+  margin-top: 10vw;
+}
