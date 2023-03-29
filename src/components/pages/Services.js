@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../../App.css';
 import axios from 'axios';
 import Stockitem from '../Stockitem';
-import Stockgraph from '../Stockgraph'
-import '../Stocks.css';
-import Portfolio from './Portfolio';
+import '../Stockitem.css';
+import './Pages.css';
 
 const options = {
   method: 'GET',
@@ -18,14 +17,14 @@ const options = {
 
 
 
+
 export default function Services() {
   const [Price, setPrice] = React.useState([]);
-  const [Name,setName] = React.useState();
 
   useEffect(() => {
     axios.request(options).then(function (response) {
       setPrice((response.data.form_4_filings));
-      // console.log(Price);
+      console.log(Price);
     }).catch(function (error) {
       console.error(error);
     });
@@ -33,20 +32,24 @@ export default function Services() {
 
 
 
+
   return (
     <>
-      <h1 className='services'>SERVICES</h1>
-      <h2>Hello There!!!</h2>
+      {/* <h1 className='services'>SERVICES</h1> */}
+      <div className="demo-head">
+        <h1>Where the world does markets</h1>
+        <h2>Join 50 million traders and investors taking the future into there own heands.</h2>
+      </div>
       <div className="stocks_container">
         <div className="stocks_wrapper">
           <ul className="stocks_items">
             {Price.map((item) => (
               <div>
                 <Stockitem
-                path="/Graphs"
-                name={item.symbol}
-                avg_value={item.aveg_pricePerShare}
-                tot_value={item.tot_value}
+                  path="/Graphs"
+                  name={item.symbol}
+                  avg_value={item.aveg_pricePerShare}
+                  tot_value={item.tot_value}
                 />
               </div>
             ))}

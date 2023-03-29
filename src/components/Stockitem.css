@@ -21,7 +21,7 @@
     -webkit-filter: drop-shadow(0 5px 5px rgba(56, 125, 255, 0.017));
     filter: drop-shadow(0 6px 5px rgba(56, 125, 255, 0.017));
     color: black;
-    /* margin: 10% 0; */
+    padding: 2% 3%;
 }
 .stock_item {
     width: 60vw;
@@ -30,7 +30,6 @@
     flex-direction: column;
     margin: 3% 0px;
 }
-
 .stock_item_body {
     display: flex;
     justify-content: space-between;
@@ -47,10 +46,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* height: 30px; */
+    height: 30px;
     align-items: flex-end;
     color: green;
-    /* margin-right: 14%; */
+    margin-right: 14%;
     font-size: 1.6rem;
 }
 
@@ -58,4 +57,21 @@
     margin: 0px 1.4rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
+}
+
+.mb-2{
+    color: black;
+    font-weight: 900;
+    font-size: 4.8vh;
+    font-family: cursive;
+
+}
+
+.stock-para{
+    font-size: 3vh;
+}
+
+.stock-prices{
+    font-size: 2.2vh;
+    color: green;
 }

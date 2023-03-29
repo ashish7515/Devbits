@@ -29,9 +29,9 @@ export default function Stockgraph() {
       function createWidget() {
         if (document.getElementById('tradingview_5b391') && 'TradingView' in window) {
           new window.TradingView.widget({
-            width: 290,
+            width: true,
             // autosize: true,
-            // height: 5,
+            height: 500,
             symbol: "SOVO",
             interval: "D",
             timezone: "Etc/UTC",
@@ -53,7 +53,7 @@ export default function Stockgraph() {
     <div className='tradingview-widget-container'>
       <div id='tradingview_5b391' />
       <div className="tradingview-widget-copyright">
-        <a href="https://in.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span className="blue-text">AAPL stock chart</span></a> by TradingView
+        {/* <a href="https://in.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span className="blue-text">AAPL stock chart</span></a> by TradingView */}
       </div>
     </div>
   );

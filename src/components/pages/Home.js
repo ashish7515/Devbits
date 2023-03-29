@@ -11,7 +11,9 @@ function Home() {
       <HeroSection />
       <Stocklist />
       <AboutUs />
-      <Stockgraph />
+      <div className="graph-container">
+        <Stockgraph />
+      </div>
     </>
   );
 }
