@@ -10,12 +10,12 @@
     padding: 5% 0;
 }
 
-.demo-head h1{
+#a111{
     font-size: 5.2vw;
 
 }
 
-.demo-head h2{
+#a222{
     font-size: 3.2vh;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -23,14 +23,43 @@
     /* font-style: italic; */
 }
 
+.demo-head-2{
+    color: black;
+    font-size: 6.8vh;
+    margin: 2% 0;
+    margin-left: -65%;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    padding: 3% 0;
+}
+
+
+
+
 @media screen and (max-width: 820px) {
     .demo-head{
         padding: 14% 0;
     }
-    .demo-head h1{
+    #a111{
         font-size: 5vh;
     }
-    .demo-head h2{
+    #a222{
         font-size: 2.4vh;
     }
+    .demo-head-2{
+        font-size: 4vh;
+        padding-left: 28%;
+        /* margin: 20px 0px; */
+        /* margin-left: 0%; */
+    }
+    .profile-card{
+        padding: 5% 0;
+        /* margin: 0 4%; */
+    }
+    
 }

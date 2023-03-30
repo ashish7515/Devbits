@@ -4,7 +4,7 @@ import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
 import Services from './components/pages/Services';
-import Portfolio from './components/pages/Portfolio';
+import Profile from './components/pages/Profile';
 import SignUp from './components/pages/SignUp';
 import Marketnews from './components/pages/Marketnews';
 import Footer from './components/Footer';
@@ -20,9 +20,9 @@ function App() {
           {/* <Routes> */}
           <Route path='/' exact component={Home} />
           <Route path='/services' component={Services} />
-          <Route path='/Portfolio' component={Portfolio} />
+          <Route path='/Profile' component={Profile} />
           <Route path='/sign-up' component={SignUp} />
-          <Route path='/Marketnews' component={Marketnews} />
+          <Route path='/news' component={Marketnews} />
           <Route path='/Graphs' component={Graphs} />
           {/* </Routes> */}
         </Switch>

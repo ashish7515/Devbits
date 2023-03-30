@@ -5,6 +5,8 @@ import Stockitem from '../Stockitem';
 import '../Stockitem.css';
 import './Pages.css';
 
+
+
 const options = {
   method: 'GET',
   url: 'https://yahoo-finance15.p.rapidapi.com/api/v1/sec/form4',
@@ -35,10 +37,15 @@ export default function Services() {
 
   return (
     <>
+      
       {/* <h1 className='services'>SERVICES</h1> */}
+
       <div className="demo-head">
-        <h1>Where the world does markets</h1>
-        <h2>Join 50 million traders and investors taking the future into there own heands.</h2>
+        <h1 id='a111'>Where the world does markets</h1>
+        <h2 id='a222'>Join 50 million traders and investors taking the future into there own heands.</h2>
+      </div>
+      <div className="demo-head-2">
+        <h1>Listed US Stocks</h1>
       </div>
       <div className="stocks_container">
         <div className="stocks_wrapper">

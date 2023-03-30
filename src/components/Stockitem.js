@@ -28,9 +28,6 @@ export default function Stockitem(props) {
   //   )
 
 
-
-
-    
   return (
     <>
       <li className="stock_item">
@@ -48,9 +45,7 @@ export default function Stockitem(props) {
                 {props.name}
               </Typography>
               <Typography variant="h4" className="stock-para">
-                The place is close to Barceloneta Beach and bus stop just 2 min by
-                walk and near to "Naviglio" where you can enjoy the main night life in
-                Barcelona.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dicta ipsam eligendi adipisci qui alias, odit ex corrupti molestias ea dolore numquam fugit! Facere, veniam!
               </Typography>
             </CardBody>
             <CardFooter divider className="flex items-center justify-between pt-3 mx-1">
