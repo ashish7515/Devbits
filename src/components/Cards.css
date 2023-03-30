@@ -131,12 +131,21 @@ h1{
 .card p{
   color: slategrey;
 }
+
+/*  */
+
+.card__copy {
+  padding: 20px;
+  /* height: auto; */
+}
+
 .card-description {
-  height: 15vh;
+  height: 16vh;
   justify-content: space-between;
   position: sticky;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   position: relative;
+  overflow-y: auto;
   /* margin-bottom: ; */
 }
 
@@ -154,10 +163,6 @@ h1{
   /* max-width: 10vw; */
 }
 
-.card__copy {
-  padding: 20px;
-  /* height: auto; */
-}
 
 .card-heading-title h1{
   font-size: 2.8rem;
