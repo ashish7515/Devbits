@@ -32,7 +32,23 @@ export default function Services() {
     });
   }, []);
 
+  // console.log(props.name);
+  const API_KEY = '1QNWA30TWRMAJXHZ';
+  let StockSymbol = "AAPL";
+  let API_Call = `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${StockSymbol}&apikey=${API_KEY}`
 
+  fetch(API_Call)
+    .then(
+      function (response) {
+        return response.json();
+      }
+    )
+    .then(
+      function (data) {
+        console.log("jo chahiye tha");
+        console.log(data);
+      }
+    )
 
 
   return (
@@ -53,7 +69,7 @@ export default function Services() {
             {Price.map((item) => (
               <div>
                 <Stockitem
-                  path="/Graphs"
+                  path="/graph"
                   name={item.symbol}
                   avg_value={item.aveg_pricePerShare}
                   tot_value={item.tot_value}

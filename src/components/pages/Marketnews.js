@@ -5,7 +5,7 @@ import Cards from '../../components/Cards';
 export default function Marketnews() {
   return (
     <>
-      <h1 className='marketnews'>Market News</h1>;
+      <h1 className='marketnews'>Market News</h1>
       <Cards />
     </> 
   );

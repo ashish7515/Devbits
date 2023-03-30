@@ -97,6 +97,26 @@ function Cards() {
               title={value[8].title}
             />
           </ul>
+          <ul className='cards__items'>
+            <CardItem
+              src='https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fHN0b2NrJTIwbWFya2V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+              path={value[9].link}
+              description={value[9].description}
+              title={value[9].title}
+            />
+            <CardItem
+              src='https://plus.unsplash.com/premium_photo-1677265809324-8104fb713e49?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHN0b2NrJTIwbWFya2V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+              path={value[10].link}
+              description={value[10].description}
+              title={value[10].title}
+            />
+            <CardItem
+              src='https://images.unsplash.com/photo-1579532582937-16c108930bf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHN0b2NrJTIwbWFya2V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+              path={value[11].link}
+              description={value[11].description}
+              title={value[11].title}
+            />
+          </ul>
         </div>
       </div>
     </div>

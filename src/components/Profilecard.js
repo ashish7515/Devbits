@@ -17,11 +17,11 @@ import {
           <Typography variant="h4" color="blue-gray" className="mb-2">
             Natalie Paisley
           </Typography>
-          <Typography color="blue" className="font-medium" textGradient>
-            Balance - 100000
+          <Typography variant="h5" color="blue" className="font-medium" textGradient>
+            Balance - 10000000
           </Typography>
         </CardBody>
-        <CardFooter className="flex justify-center gap-7 pt-2">
+        {/* <CardFooter className="flex justify-center gap-7 pt-2">
           <Tooltip content="Like">
             <Typography
               as="a"
@@ -55,7 +55,7 @@ import {
               <i className="fab fa-instagram" />
             </Typography>
           </Tooltip>
-        </CardFooter>
+        </CardFooter> */}
       </Card>
     );
   }

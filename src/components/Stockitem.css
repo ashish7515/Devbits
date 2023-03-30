@@ -16,12 +16,12 @@
     text-decoration: none;
     background-color: #fff9;
     border-radius: 10px;
-    border: 2px solid #696969;
+    border: 0px solid #696969;
     box-shadow: 1px 0px 5px 5px rgba(56, 125, 255, 0.17);
     -webkit-filter: drop-shadow(0 5px 5px rgba(56, 125, 255, 0.017));
     filter: drop-shadow(0 6px 5px rgba(56, 125, 255, 0.017));
     color: black;
-    padding: 2% 3%;
+    /* padding: 2% 3%; */
 }
 .stock_item {
     width: 60vw;
