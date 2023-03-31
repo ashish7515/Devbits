@@ -1,54 +1,43 @@
 const people = [
   {
-    name: 'Jane Cooper',
+    name: 'Adani Ports Sez Ltd.',
     title: 'Regional Paradigm Technician',
-    department: 'Optimization',
-    role: 'Admin',
-    email: 'jane.cooper@example.com',
-    image: 'https://bit.ly/33HnjK0',
+    quantity: 40
   },
   {
-    name: 'John Doe',
+    name: 'Apollo Hospitals Ltd.',
     title: 'Regional Paradigm Technician',
-    department: 'Optimization',
-    role: 'Tester',
-    email: 'john.doe@example.com',
-    image: 'https://bit.ly/3I9nL2D',
+    quantity: 50
   },
   {
-    name: 'Veronica Lodge',
+    name: 'Asian Paints Ltd.',
     title: 'Regional Paradigm Technician',
-    department: 'Optimization',
-    role: ' Software Engineer',
-    email: 'veronica.lodge@example.com',
-    image: 'https://bit.ly/3vaOTe1',
+    quantity: 20
   },
   {
-    name: 'Veronica Lodge',
+    name: 'Axis Bank Ltd.',
     title: 'Regional Paradigm Technician',
-    department: 'Optimization',
-    role: ' Software Engineer',
-    email: 'veronica.lodge@example.com',
-    image: 'https://bit.ly/3vaOTe1',
+    quantity: 42
   },
   {
-    name: 'Veronica Lodge',
+    name: 'Bajaj Auto Ltd.',
     title: 'Regional Paradigm Technician',
-    department: 'Optimization',
-    role: ' Software Engineer',
-    email: 'veronica.lodge@example.com',
-    image: 'https://bit.ly/3vaOTe1',
+    quantity: 23
   },
   {
-    name: 'Veronica Lodge',
+    name: 'Bharat Petroleum Ltd.',
     title: 'Regional Paradigm Technician',
-    department: 'Optimization',
-    role: ' Software Engineer',
-    email: 'veronica.lodge@example.com',
-    image: 'https://bit.ly/3vaOTe1',
+    quantity: 67
+  },
+  {
+    name: 'Axis Bank Ltd.',
+    title: 'Regional Paradigm Technician',
+    quantity: 42
   }
   // More people...
 ];
+
+const email = "ashish123@gmail.com";
 
 export default function Stocktable() {
   return (
@@ -69,7 +58,7 @@ export default function Stocktable() {
                     scope="col"
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                   >
-                    Company
+                    Description
                   </th>
                   <th
                     scope="col"
@@ -96,7 +85,7 @@ export default function Stocktable() {
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 {people.map(person => (
-                  <tr key={person.email}>
+                  <tr key={email}>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="flex items-center">
                         {/* <div className="flex-shrink-0 h-10 w-10">
@@ -110,10 +99,10 @@ export default function Stocktable() {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="text-sm text-gray-900">{person.title}</div>
-                      <div className="text-sm text-gray-500">USD</div>
+                      <div className="text-sm text-gray-500">Rupee</div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="text-sm text-gray-900">50</div>
+                      <div className="text-sm text-gray-900">{person.quantity}</div>
                       {/* <span
                           className="px-2 inline-flex text-xs leading-5
                         font-semibold rounded-full bg-green-100 text-green-800"
@@ -126,12 +115,12 @@ export default function Stocktable() {
                       </td> */}
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                       <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                        Click Me
+                        Click
                       </a>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                       <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                        Click Me
+                        Click
                       </a>
                     </td>
                   </tr>

@@ -61,7 +61,7 @@ export default function Services() {
         <h2 id='a222'>Join 50 million traders and investors taking the future into there own heands.</h2>
       </div>
       <div className="demo-head-2">
-        <h1>Listed US Stocks</h1>
+        <h1>Listed Stocks</h1>
       </div>
       <div className="stocks_container">
         <div className="stocks_wrapper">

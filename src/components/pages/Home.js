@@ -2,18 +2,23 @@ import React from 'react';
 import '../../App.css';
 import HeroSection from '../HeroSection';
 import Stocklist from '../Stocklist';
-import AboutUs from '../AboutUs';
 import Stockgraph from '../Stockgraph';
+import Content from '../Content';
+import About from '../About';
 
 function Home() {
   return (
     <>
       <HeroSection />
       <Stocklist />
-      <AboutUs />
+      <Content />
+      <About />
+      <h1 id='search-graph'>Go for search!</h1>
       <div className="graph-container">
         <Stockgraph />
+        <br /><br />
       </div>
+      
     </>
   );
 }

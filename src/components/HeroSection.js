@@ -3,6 +3,7 @@ import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
 
+
 function HeroSection() {
   return (
     <div className='hero-container'>
@@ -14,6 +15,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
+          goto = './signin'
         >
           GET STARTED
         </Button>
@@ -21,6 +23,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
+          goto = './profile'
           onClick={console.log('hey')}
         >
           BUY ASSETS <i className='far fa-play-circle' />

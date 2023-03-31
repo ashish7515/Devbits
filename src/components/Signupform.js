@@ -13,7 +13,7 @@ export default function Signupform() {
                 Sign In
             </Typography>
             <Typography color="gray" className="mt-1 font-normal">
-                Enter your details to register.
+                Enter your details.
             </Typography>
             <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
                 <div className="mb-4 flex flex-col gap-6">
